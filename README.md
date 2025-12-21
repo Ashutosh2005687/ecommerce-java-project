@@ -1,22 +1,36 @@
-# Online E-Commerce Website (Review-1)
+# Online E-Commerce System (Java GUI Project)
 
 ## Overview
-Simple desktop e-commerce admin console built with Java Swing, JDBC and MySQL. This deliverable contains the project skeleton, model classes, DAO classes, a basic Swing UI and SQL schema.
+This project is a Java GUI based Online E-Commerce System developed using Java Swing, JDBC, and MySQL.
+It demonstrates GUI programming, database connectivity, and clean modular code architecture.
 
-## Setup
-1. Install Java 11+ and MySQL server.
-2. Create database and tables: run `sql/ecommerce_schema.sql` using MySQL client or Workbench.
-3. Update DB credentials in `src/com/ecommerce/dao/DBConnection.java` (URL, USER, PASS).
-4. Compile and run: from project root:
-   ```bash
-   javac -d out $(find src -name "*.java")
-   java -cp out com.ecommerce.ui.MainFrame
-   ```
+---
 
-## Project Structure
-- `src/com/ecommerce` : Java source (model, dao, ui, util)
-- `sql/ecommerce_schema.sql` : SQL schema & sample data
+## Core Features
+- User Login System
+- Product Listing using JTable
+- Add, Update, Delete Products
+- Order Management
+- MySQL Database Connectivity
+- DAO Design Pattern
 
-## Notes
-- Password hashing utility included for demo in `com.ecommerce.util.Utils` (SHA-256). Use bcrypt/argon2 in real apps.
-- This is a Review-1 skeleton. Add more UI and business logic for full functionality.
+---
+
+## Technologies Used
+- Java
+- Java Swing
+- JDBC
+- MySQL
+- NetBeans IDE
+
+---
+
+## Project Architecture
+UI → DAO → DBConnection → MySQL Database
+
+This layered architecture ensures better integration and maintainability.
+
+---
+
+## Folder Structure
+
